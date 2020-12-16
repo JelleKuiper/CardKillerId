@@ -1,0 +1,141 @@
+/* Achtergrond, lettertype en tekstkleur */
+body{
+  background: url("../Photos/MenuBackground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: black;
+
+  font-family: arial;
+  color: white;
+}
+
+/* Styling voor alle divs enzo */
+.container{
+  text-align: center;
+  margin: auto;
+  vertical-align: top;
+}
+
+.big{
+  height: 850px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+.medium{
+  height: 670px;
+  width: 90%;
+}
+
+.small{
+  height: 80%;
+  display: inline-block;
+  width: 40%;
+  margin: 20px 10px 0 10px;
+  text-align: center;
+  border: 3px solid gray;
+  border-radius: 16px;
+}
+
+/* Om de tabellen onder elkaar te zetten onder 1450 screen-width */
+@media (max-width: 1450px){
+  .small{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 10px;
+  }
+}
+
+/* buttons */
+.btn{
+  cursor: pointer;
+  font-size: 22px;
+  background-color: gray;
+  border: 3px solid black;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+
+.btn:hover{
+  background-color: black;
+  border-color: gray;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.goToBtn{
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 50%;
+  padding: 10px 0;
+}
+
+/* Table styling */
+.table-title{
+  font-weight: bold;
+}
+
+table{
+  margin: 10px;
+}
+
+@media (max-width: 1450px){
+  table{
+    width: 98%;
+  }
+}
+
+.better-width{
+  width: 25%;
+}
+
+.minus-margin{
+  margin-bottom: 0;
+}
+
+/* Borders of table */
+.highlight-border{
+  border: 2px solid white;
+}
+
+.normal-border{
+  border: 1px solid gray;
+}
+
+/* Titel animatie styling */
+.black2white{
+  animation: color-change 2s infinite;
+  color: black;
+}
+
+@keyframes color-change {
+  0%{color: black;}
+  50%{color: white;}
+  100%{color: black;}
+}
+
+.white2black{
+  animation: color-change2 2s infinite;
+  color: white;
+}
+
+@keyframes color-change2 {
+  0%{color: white;}
+  50%{color: black;}
+  100%{color: white;}
+}
+
+.title{
+  font-size: 50px;
+}
+
+.fontsize{
+  font-size: 19px;
+}
+
+@media(max-width: 1450px){
+  .fontsize{
+    font-size: 26px;
+  }
+}
